@@ -1,0 +1,97 @@
+
+#main{
+    display:flex;
+}
+header{
+    background-color: rgb(168, 155, 155);
+}
+h1{
+    color:blueviolet;
+    text-align: center;
+}
+
+#container{
+    display:grid;
+    height:400px;
+    width:600px;
+    grid-template-columns:repeat(10,1fr);
+    grid-template-rows:repeat(8,1fr);
+    /* grid-template-areas:
+    "r r r r r r r r r r"
+    "r h b b h h b h b r"
+    "r b b b b b b b b r"
+    "r h b b h b b h t r"
+    "r b b b b b b b b r"
+    "r h b b h b b h h r"
+    "r h b b h b b h h r"
+    "r r r r r r r r r r"; */
+
+    
+    /* "r r r r r r r r r r r r r r r r r"
+    "r b b b h h b h b b b h h h h h r"
+    "r b r h r h r h r b r h r h r h r"
+    "r b h h h h b b b b b h h h b b r"
+    "r h r h r h r b r h r h r h r h r"
+    "r h h h h h b h h h b b b h b t r"
+    "r h r b r b r b r b r h r h r b r"
+    "r "
+    "r b r b r b r h r h r b r h r b r"
+    "r h h h h b b b b h b h b h h h r"
+    "r r r r r r r r r r r r r r r r r"; */
+}
+#plateau{
+    position:relative;
+}
+.rock{
+    background-image: url("images/rocher.png");
+}
+.briques{
+    grid-area: 3/3/6/10; 
+    background-image: url("images/brique.png");
+}
+
+.herbe{
+
+    background-image: url("images/herbe.png");
+}
+#tresor{
+    background-image: url("images/tresor.png"); 
+    grid-column-start:9;
+    grid-row-start: 4;
+}
+.bomberman{
+    position: absolute;
+    width:70px;
+    height:88px; 
+    z-index:1; 
+    background-image: url("images/bomberman.png");
+}
+#affichage{
+    /* background-image: linear-gradient(90deg, hsl(240,100%,0%), hsl(254,67%,13%), hsl(275,82%,22%), hsl(297,65%,26%), hsl(324,58%,36%), hsl(345,54%,47%), hsl(8,70%,54%), hsl(25,89%,52%), hsl(38,97%,51%), hsl(49,90%,61%), hsl(49,90%,61%)); */
+    display:flex;
+    flex-direction: column;
+    padding:40px;
+}
+.barre{
+    width:300px;
+    height: 50px; 
+    border-width: 150px;
+    border-width: 2px;
+    border: double ;
+}
+.vie{
+    height: 50px; 
+    background-color: purple;
+    text-align: center;
+    font-size: larger;
+
+
+}
+
+.bombe {
+    position: absolute;
+    background-image: url("images/bombe.png");
+    background-repeat: no-repeat;
+    height:60px;
+    width:60px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Bomberman</title>
+</head>
+<body>
+    <!-- en-tête -->
+    <header>
+        <h1>Bomberman</h1>
+    </header>
+    <div id="main">
+        <div id="container">
+        <!-- encadrement de rochers du plateau -->
+                <div class="rock" style="grid-area: 1 / 1 / 2 / 11;"></div>
+                <div class="rock" style="grid-area: 1 / 1 / 9 / 2;"></div>
+                <div class="rock" style="grid-area: 8 / 1 / 9 / 11;"></div>
+                <div class="rock" style="grid-area: 1 / 10 / 9 / 11;"></div>
+        <!-- plateau de jeux -->
+                <div id="plateau" style="grid-area: 2 / 2 / 8 / 10;"></div>
+                    <div class="herbe"></div>
+                    <div class="briques" style="grid-area: 2 / 3 / 8 / 5;"></div>
+                    <div class="briques " style="grid-area: 3 / 2 / 3 / 10;"></div>
+                    <div class="briques" style="grid-area: 5 / 3 / 5 / 10;"></div>
+                    <div class="briques" style="grid-area: 4 / 6 / 8 / 6;"></div>
+                    <div id="tresor"></div>
+        </div> 
+        <div id="affichage"></div>
+    </div>
+   <script src="script/animations.js"></script>
+   <script src="script/bomberman.js"></script>
+   <script src="script/bombe.js"></script>
+   
+</body>
+</html>
