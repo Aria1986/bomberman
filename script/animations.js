@@ -15,16 +15,6 @@ window.addEventListener('keypress',(event) =>{if (event.code == "Enter"){bomberm
 // plateau.addEventListener("click", bomberm.avancer);
 console.log("valeur poser bombe",this.varPoserBombe);
 
-// if  (bomberm.varPoserBombe == true){
-//     console.log("creation de bombe")
-//     let b = new Bombe((bomberm.positionX + 35),(bomberm.positionY + 44 ));   
-//     setTimeout(bomberm.afficherPosition(),2000);
-//     setTimeout(b.exploser(b.positionX, b.positionY),3000);     
-//  }
-// else{console.log("bombe pas posée")}
-
-
-
 
 
 // const container = document.querySelector("#container");

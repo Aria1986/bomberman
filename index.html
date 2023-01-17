@@ -12,6 +12,7 @@
     <header>
         <h1>Bomberman</h1>
     </header>
+    <!-- div cachée affichant 1 fantôme et gameme over lorsque Bomberman n'a plus de vie -->
     <div id= "ghost" style="width:50%; display:none;"> </h1><img id= "ghost" src="images/fantome.gif" >
         <h2>game over</h2>
     </div>
@@ -31,11 +32,13 @@
                     <div class="briques" style="grid-area: 4 / 6 / 8 / 6;"></div>
                     <div id="tresor"></div>
         </div> 
+        <!-- espace d'affichage de la barre de vie -->
         <div id="affichage"></div>
 
     </div>
     <script src="script/Bombe.js"></script>
     <script src="script/Bomberman.js"></script>
     <script src="script/animations.js"></script>
+
 </body>
 </html>
