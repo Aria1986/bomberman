@@ -4,7 +4,10 @@
 }
 header{
     background-color: rgb(168, 155, 155);
+    padding: 2px;
 }
+header p{text-align: center;}
+
 h1{
     color:blueviolet;
     text-align: center;
@@ -16,6 +19,7 @@ h2{
 }
 
 #container{
+    padding:15px;
     display:grid;
     height:400px;
     width:600px;
